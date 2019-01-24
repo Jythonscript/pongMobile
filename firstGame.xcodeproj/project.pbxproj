@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EB2F915215AF63900389BCA /* ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB2F914215AF63900389BCA /* ship.swift */; };
+		3EB2F917215BED1A00389BCA /* enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB2F916215BED1A00389BCA /* enemy.swift */; };
+		3EB2F919215BF1A600389BCA /* projectile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB2F918215BF1A600389BCA /* projectile.swift */; };
 		3EC78C2A21555A4300A06F29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC78C2921555A4300A06F29 /* AppDelegate.swift */; };
 		3EC78C2C21555A4300A06F29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC78C2B21555A4300A06F29 /* ViewController.swift */; };
 		3EC78C2F21555A4300A06F29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC78C2D21555A4300A06F29 /* Main.storyboard */; };
 		3EC78C3121555A4800A06F29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EC78C3021555A4800A06F29 /* Assets.xcassets */; };
 		3EC78C3421555A4800A06F29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC78C3221555A4800A06F29 /* LaunchScreen.storyboard */; };
+		3EC78C3C2155689000A06F29 /* spriteKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC78C3B2155689000A06F29 /* spriteKitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EB2F914215AF63900389BCA /* ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ship.swift; sourceTree = "<group>"; };
+		3EB2F916215BED1A00389BCA /* enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enemy.swift; sourceTree = "<group>"; };
+		3EB2F918215BF1A600389BCA /* projectile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectile.swift; sourceTree = "<group>"; };
 		3EC78C2621555A4300A06F29 /* firstGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firstGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EC78C2921555A4300A06F29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EC78C2B21555A4300A06F29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,7 @@
 		3EC78C3021555A4800A06F29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EC78C3321555A4800A06F29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EC78C3521555A4800A06F29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EC78C3B2155689000A06F29 /* spriteKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spriteKitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EB2F91A215D486800389BCA /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				3EB2F914215AF63900389BCA /* ship.swift */,
+				3EB2F916215BED1A00389BCA /* enemy.swift */,
+				3EB2F918215BF1A600389BCA /* projectile.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		3EC78C1D21555A4300A06F29 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +74,12 @@
 			children = (
 				3EC78C2921555A4300A06F29 /* AppDelegate.swift */,
 				3EC78C2B21555A4300A06F29 /* ViewController.swift */,
+				3EB2F91A215D486800389BCA /* Custom */,
 				3EC78C2D21555A4300A06F29 /* Main.storyboard */,
 				3EC78C3021555A4800A06F29 /* Assets.xcassets */,
 				3EC78C3221555A4800A06F29 /* LaunchScreen.storyboard */,
 				3EC78C3521555A4800A06F29 /* Info.plist */,
+				3EC78C3B2155689000A06F29 /* spriteKitView.swift */,
 			);
 			path = firstGame;
 			sourceTree = "<group>";
@@ -135,8 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EB2F917215BED1A00389BCA /* enemy.swift in Sources */,
 				3EC78C2C21555A4300A06F29 /* ViewController.swift in Sources */,
+				3EB2F915215AF63900389BCA /* ship.swift in Sources */,
 				3EC78C2A21555A4300A06F29 /* AppDelegate.swift in Sources */,
+				3EB2F919215BF1A600389BCA /* projectile.swift in Sources */,
+				3EC78C3C2155689000A06F29 /* spriteKitView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,14 +306,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 883DK65VTV;
 				INFOPLIST_FILE = firstGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.companyHere.firstGame;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.edenpr.pongMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,14 +327,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 883DK65VTV;
 				INFOPLIST_FILE = firstGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.companyHere.firstGame;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.edenpr.pongMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
